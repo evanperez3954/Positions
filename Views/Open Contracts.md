@@ -13,7 +13,7 @@ SELECT
     CAST(CASE [CT].[CONTRACT_TYPE] 
         WHEN 1 THEN 'Purchase' 
         WHEN 2 THEN 'Sale' 
-        ELSE 'Other' 
+        ELSE 'Other' ///
     END AS VARCHAR(20)) AS [CONTRACT_TYPE_DESC],
 
     [CT].[CUSTOMER],  -- Customer ID
